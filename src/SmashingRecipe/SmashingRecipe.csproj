@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MainPage.xaml.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    x:Class="SmashingRecipe.RecipeDetailPage"   
+    ios:Page.UseSafeArea="true"
+    Title="{Binding Name}">
+   
+<ContentPage.Resources>
+    <StyleSheet Source="../Styles/RecipeDetailStyle.css" />
+</ContentPage.Resources>
+
+<ContentPage.Content>
+    <ScrollView>
+        <FlexLayout AlignItems="Start" AlignContent="Start" Wrap="Wrap">
+            <Label x:Name="recipeName" FontSize="Large" />
+            <BoxView FlexLayout.Basis="100%" HeightRequest="0" />
+            
+            <Label Text="Ingredients" FontSize="Large" />
+            <BoxView FlexLayout.Basis="100%" HeightRequest="0" />
+            <Label x:Name="ingredients" FontSize="Small" Margin="10,10" />
+
+            <BoxView FlexLayout.Basis="100%" HeightRequest="0" />
+            
+            <Label Text="Directions" FontSize="Large" />
+            <BoxView FlexLayout.Basis="100%" HeightRequest="0" />
+            <Label x:Name="directions" FontSize="Small" Margin="10,10" />
+            
+        </FlexLayout>
+    </ScrollView>
+</ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit" Clicked="Edit_Clicked" />
+    </ContentPage.ToolbarItems>
+</ContentPage>
+
+
+<!-- Data binding
+<Label Text="{Binding Name}" FontSize="Large" />
+<Label Text="{Binding Ingredients}" FontSize="Small" Margin="10,10" />
+<Label Text="{Binding Directions}" FontSize="Small" Margin="10,10" />
+-->
+
+<!-- With Styles
+
+<FlexLayout StyleClass="flexContent">
+
+            <Image Source="buns.png" />
+
+            <Label Text="{Binding Name}" StyleClass="foodHeader" />
+                   
+            <BoxView StyleClass="spacer" />
+
+            <Label Text="Ingredients" StyleClass="dataLabel" HorizontalOptions="FillAndExpand" />
+            <BoxView StyleClass="spacer" />
+            <Label Text="{Binding Ingredients}" StyleClass="data" />
+
+            <BoxView StyleClass="spacer" />
+            
+            <Label Text="Directions" StyleClass="dataLabel" HorizontalOptions="FillAndExpand" />
+            <BoxView StyleClass="spacer" />
+            <Label Text="{Binding Directions}" StyleClass="data" />
+
+        </FlexLayout>
+
+-->
