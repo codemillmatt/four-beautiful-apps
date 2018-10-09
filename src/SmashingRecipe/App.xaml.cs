@@ -33,8 +33,10 @@ namespace SmashingRecipe
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Fudgy Avocado Brownies" });
 
             var np = new NavigationPage(new RecipeListPage());
-            np.BarBackgroundColor = Color.FromHex("#01487E");
-            np.BarTextColor = Color.White;
+
+            //np.BarBackgroundColor = Color.FromHex("#01487E");
+            //np.BarTextColor = Color.White;
+
             MainPage = np;
         }
 
