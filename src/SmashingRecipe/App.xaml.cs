@@ -15,8 +15,8 @@ namespace SmashingRecipe
             InitializeComponent();
 
             AllRecipes = new List<Recipe>();
-            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Buns", Ingredients = "Love and some secret stuff", Directions = @"Surely I'm not going to give away family secrets in this talk!!" });
-            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Coleslaw" });
+            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Buns", Ingredients = "Love and some secret stuff", Directions = @"Surely I'm not going to give away family secrets in this talk!!", Picture = "buns.png" });
+            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Coleslaw", Ingredients = "Coleslaw Mix", Directions = "Open and serve" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Baked Beans" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Black Forest Ham" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Best Chicken You've Ever Tasted" });

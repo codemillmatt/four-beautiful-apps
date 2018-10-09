@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SmashingRecipe.RecipeCellView">
+    <ContentView.Content>
+        <FlexLayout AlignItems="Center" AlignContent="Start" Wrap="Wrap">
+            <Image Source="{Binding Picture}"/>
+            <Label Text="{Binding Name}" VerticalTextAlignment="Center" />
+        </FlexLayout>       
+    </ContentView.Content>
+</ContentView>
