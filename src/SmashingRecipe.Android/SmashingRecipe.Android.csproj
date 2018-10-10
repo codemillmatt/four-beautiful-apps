@@ -96,6 +96,11 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\matt.png" />
     <AndroidResource Include="Resources\drawable\buns.png" />
+    <AndroidResource Include="Resources\drawable\bounce.png" />
+    <AndroidResource Include="Resources\drawable\brownies.png" />
+    <AndroidResource Include="Resources\drawable\peas.png" />
+    <AndroidResource Include="Resources\drawable\pie.png" />
+    <AndroidResource Include="Resources\drawable\slaw.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

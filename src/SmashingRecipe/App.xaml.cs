@@ -2,6 +2,8 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
+using System.IO;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SmashingRecipe
@@ -16,7 +18,7 @@ namespace SmashingRecipe
 
             AllRecipes = new List<Recipe>();
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Buns", Ingredients = "Love and some secret stuff", Directions = @"Surely I'm not going to give away family secrets in this talk!!", Picture = "buns.png" });
-            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Coleslaw", Ingredients = "Coleslaw Mix", Directions = "Open and serve" });
+            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Coleslaw", Ingredients = "Coleslaw Mix", Directions = "Open and serve", Picture = "slaw.png" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Baked Beans" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Black Forest Ham" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Best Chicken You've Ever Tasted" });
@@ -24,13 +26,13 @@ namespace SmashingRecipe
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Hot Potato Salad" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Homemade Brats" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Gumbo" });
-            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Rhubarb Pie" });
-            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Cherry Bounce" });
+            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Rhubarb Pie", Picture = "pie.png", Ingredients = "Rhubarb and sugar", Directions = "Bake it" });
+            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Cherry Bounce", Picture = "bounce.png", Directions = "Let it sit", Ingredients = "Cherries and stuff" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Ranch Chicken" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Veggie Lentil Soup" });
             AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Poached Eggs with Yogurt" });
-            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Spicy Roasted Chickpeas" });
-            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Fudgy Avocado Brownies" });
+            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Spicy Roasted Chickpeas", Picture = "peas.png", Ingredients = "Chickpeas and spice", Directions = "Roast 'em" });
+            AllRecipes.Add(new Recipe { Id = Guid.NewGuid(), Name = "Fudgy Avocado Brownies", Picture = "brownies.png", Ingredients = "Avocado", Directions = "lots" });
 
             var np = new NavigationPage(new RecipeListPage());
 

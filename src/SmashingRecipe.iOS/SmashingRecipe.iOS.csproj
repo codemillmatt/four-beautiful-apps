@@ -143,6 +143,16 @@
     <ImageAsset Include="Assets.xcassets\matt.imageset\matt.png" />
     <ImageAsset Include="Assets.xcassets\buns.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\buns.imageset\buns.png" />
+    <ImageAsset Include="Assets.xcassets\bounce.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\brownies.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\peas.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pie.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\slaw.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\slaw.imageset\slaw.png" />
+    <ImageAsset Include="Assets.xcassets\pie.imageset\pie.png" />
+    <ImageAsset Include="Assets.xcassets\peas.imageset\peas.png" />
+    <ImageAsset Include="Assets.xcassets\brownies.imageset\brownies.png" />
+    <ImageAsset Include="Assets.xcassets\bounce.imageset\bounce.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -165,5 +175,10 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\matt.imageset\" />
     <Folder Include="Assets.xcassets\buns.imageset\" />
+    <Folder Include="Assets.xcassets\bounce.imageset\" />
+    <Folder Include="Assets.xcassets\brownies.imageset\" />
+    <Folder Include="Assets.xcassets\peas.imageset\" />
+    <Folder Include="Assets.xcassets\pie.imageset\" />
+    <Folder Include="Assets.xcassets\slaw.imageset\" />
   </ItemGroup>
 </Project>
